@@ -41,7 +41,7 @@ function App() {
 
   return(
     <View style={{flex:1}}>
-      <Appbar style={{backgroundColor:'aqua'}}>
+      <Appbar style={{backgroundColor:'orange'}}>
         <Appbar.Content title={'TODOs List'}/>
       </Appbar>
       <FlatList
@@ -50,7 +50,7 @@ function App() {
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => <Todo {...item}/>}
       />
-      <TextInput style={{backgroundColor:"aqua"}} label={'New Todo'} value={todo} onChangeText={(text) => setTodo(text)}/>
+      <TextInput style={{backgroundColor:"orange"}} label={'New Todo'} value={todo} onChangeText={(text) => setTodo(text)}/>
       <Button textColor="black"  onPress={addTodo}>ADD TODO</Button>
     </View>
   );
